@@ -1,0 +1,86 @@
+{
+  "triste": [
+    {
+      "texto": "O Senhor está perto dos que têm o coração quebrantado.",
+      "referencia": "Salmos 34:18"
+    },
+    {
+      "texto": "Ele enxugará dos seus olhos toda lágrima.",
+      "referencia": "Apocalipse 21:4"
+    },
+    {
+      "texto": "Os que semeiam com lágrimas, com cantos de alegria colherão.",
+      "referencia": "Salmos 126:5"
+    }
+  ],
+  "preocupado": [
+    {
+      "texto": "Lancem sobre ele toda a sua ansiedade, porque ele tem cuidado de vocês.",
+      "referencia": "1 Pedro 5:7"
+    },
+    {
+      "texto": "Não andem ansiosos por coisa alguma, mas em tudo, pela oração e súplica, com ação de graças, apresentem seus pedidos a Deus.",
+      "referencia": "Filipenses 4:6"
+    },
+    {
+      "texto": "Portanto, não se preocupem com o amanhã, pois o amanhã trará suas próprias preocupações.",
+      "referencia": "Mateus 6:34"
+    }
+  ],
+  "grato": [
+    {
+      "texto": "Dêem graças em todas as circunstâncias, pois esta é a vontade de Deus para vocês em Cristo Jesus.",
+      "referencia": "1 Tessalonicenses 5:18"
+    },
+    {
+      "texto": "Rendam graças ao Senhor, pois ele é bom; o seu amor dura para sempre.",
+      "referencia": "Salmos 107:1"
+    },
+    {
+      "texto": "Bendize, ó minha alma, ao Senhor, e não te esqueças de nenhum de seus benefícios.",
+      "referencia": "Salmos 103:2"
+    }
+  ],
+  "feliz": [
+    {
+      "texto": "Este é o dia que o Senhor fez; regozijemo-nos e alegremo-nos nele.",
+      "referencia": "Salmos 118:24"
+    },
+    {
+      "texto": "Alegrem-se sempre no Senhor. Novamente direi: alegrem-se!",
+      "referencia": "Filipenses 4:4"
+    },
+    {
+      "texto": "O coração alegre é bom remédio, mas o espírito abatido resseca os ossos.",
+      "referencia": "Provérbios 17:22"
+    }
+  ],
+  "cansado": [
+    {
+      "texto": "Venham a mim, todos os que estão cansados e sobrecarregados, e eu lhes darei descanso.",
+      "referencia": "Mateus 11:28"
+    },
+    {
+      "texto": "Ele fortalece o cansado e dá grande vigor ao que está sem forças.",
+      "referencia": "Isaías 40:29"
+    },
+    {
+      "texto": "Mas os que esperam no Senhor renovarão as suas forças.",
+      "referencia": "Isaías 40:31"
+    }
+  ],
+  "com medo": [
+    {
+      "texto": "Mesmo quando eu andar por um vale de trevas e morte, não temerei perigo algum, pois tu estás comigo.",
+      "referencia": "Salmos 23:4"
+    },
+    {
+      "texto": "Não temas, porque eu sou contigo; não te assombres, porque eu sou teu Deus.",
+      "referencia": "Isaías 41:10"
+    },
+    {
+      "texto": "O Senhor é a minha luz e a minha salvação; a quem temerei?",
+      "referencia": "Salmos 27:1"
+    }
+  ]
+}
