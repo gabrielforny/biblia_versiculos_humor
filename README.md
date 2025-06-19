@@ -1,6 +1,6 @@
 # app_versiculos
 
-A new Flutter project.
+Projeto em Flutter de um app que sugere versículos da biblia de acordo com o humor selecionado no termometro de humor
 
 ## Getting Started
 
