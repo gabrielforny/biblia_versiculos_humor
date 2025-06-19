@@ -99,7 +99,7 @@ class HumorScreen extends StatelessWidget {
                     entry.value.split(' ')[0],
                     style: TextStyle(fontSize: 28),
                   ),
-                  title: Text(entry.value.split(' ')[1]),
+                  title: Text(entry.value.substring(3).trim()),
                   onTap: () => _abrirVersiculo(context, entry.key),
                 ),
               );
