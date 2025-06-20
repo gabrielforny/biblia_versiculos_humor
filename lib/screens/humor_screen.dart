@@ -5,6 +5,7 @@ import '../models/versiculo.dart';
 import 'versiculo_screen.dart';
 import 'configuracoes_screen.dart';
 import 'favoritos_screen.dart';
+import 'devotional_screen.dart'; // novo modo devocional
 
 class HumorScreen extends StatelessWidget {
   final ThemeMode themeMode;
@@ -52,43 +53,64 @@ class HumorScreen extends StatelessWidget {
     }
   }
 
-  void _abrirConfiguracoes(BuildContext context) {
-    Navigator.push(
-      context,
-      MaterialPageRoute(
-        builder:
-            (_) => ConfiguracoesScreen(
-              currentTheme: themeMode,
-              fontSize: fontSize,
-              onSettingsChanged: onSettingsChanged,
-            ),
-      ),
-    );
+  void _abrirTela(BuildContext context, Widget tela) {
+    Navigator.pop(context); // Fecha o Drawer
+    Navigator.push(context, MaterialPageRoute(builder: (_) => tela));
   }
 
-  void _abrirFavoritos(BuildContext context) {
-    Navigator.push(
-      context,
-      MaterialPageRoute(builder: (_) => FavoritosScreen(fontSize: fontSize)),
+  Widget _buildDrawer(BuildContext context) {
+    return Drawer(
+      child: ListView(
+        children: [
+          DrawerHeader(
+            decoration: BoxDecoration(color: Colors.indigo),
+            child: Center(
+              child: Text(
+                'Bíblia Viva',
+                style: TextStyle(color: Colors.white, fontSize: 20),
+              ),
+            ),
+          ),
+          ListTile(
+            leading: Icon(Icons.emoji_emotions),
+            title: Text('Versículos por Humor'),
+            onTap: () => Navigator.pop(context),
+          ),
+          ListTile(
+            leading: Icon(Icons.menu_book),
+            title: Text('Modo Devocional'),
+            onTap:
+                () => _abrirTela(context, DevotionalScreen(fontSize: fontSize)),
+          ),
+          ListTile(
+            leading: Icon(Icons.favorite),
+            title: Text('Favoritos'),
+            onTap:
+                () => _abrirTela(context, FavoritosScreen(fontSize: fontSize)),
+          ),
+          ListTile(
+            leading: Icon(Icons.settings),
+            title: Text('Configurações'),
+            onTap:
+                () => _abrirTela(
+                  context,
+                  ConfiguracoesScreen(
+                    currentTheme: themeMode,
+                    fontSize: fontSize,
+                    onSettingsChanged: onSettingsChanged,
+                  ),
+                ),
+          ),
+        ],
+      ),
     );
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Como você está se sentindo?'),
-        actions: [
-          IconButton(
-            icon: Icon(Icons.favorite),
-            onPressed: () => _abrirFavoritos(context),
-          ),
-          IconButton(
-            icon: Icon(Icons.settings),
-            onPressed: () => _abrirConfiguracoes(context),
-          ),
-        ],
-      ),
+      drawer: _buildDrawer(context),
+      appBar: AppBar(title: Text('Como você está se sentindo?')),
       body: ListView(
         children:
             humores.entries.map((entry) {

@@ -27,3 +27,4 @@ flutter:
 
   assets:
     - assets/data/versiculos_emocoes.json
+    - assets/data/devocionais.json
